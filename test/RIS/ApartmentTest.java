@@ -9,6 +9,6 @@ public class ApartmentTest extends TestCase {
         Apartment apartment = new Apartment();
 
         assertEquals(0,apartment.getSize());
-        assertEquals(0, apartment.getRoomCount);
+        assertEquals(0, apartment.getRoomCount());
     }
 }
