@@ -29,4 +29,11 @@ public class ApartmentTest extends TestCase {
         assertEquals(4, apartment.getRoomCount());
 
     }
+
+    public void testCreateApartmentWithSizeAndRent(){
+        Apartment apartment = new Apartment(70,4200);
+
+        assertEquals(70,apartment.getSize());
+        assertEquals(4200, apartment.getMontlyRent());
+    }
 }
