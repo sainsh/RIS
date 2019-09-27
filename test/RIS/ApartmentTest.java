@@ -8,7 +8,7 @@ public class ApartmentTest extends TestCase {
 
     public void testCreateEmptyApartment(){
 
-        Apartment apartment = new Apartment(null);
+        Apartment apartment = new Apartment(new ArrayList<>());
 
         assertEquals(0,apartment.getSize());
         assertEquals(0, apartment.getRoomCount());
@@ -20,6 +20,7 @@ public class ApartmentTest extends TestCase {
                 {
                  add(new Room(Room.Type.Kitchen,12));
                  add(new Room(Room.Type.Bathroom, 7));
+                 add(new Room(Room.Type.Room,15));
                  add(new Room(Room.Type.Room,25));
                 }
         });
