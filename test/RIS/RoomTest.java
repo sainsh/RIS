@@ -25,6 +25,7 @@ public class RoomTest extends TestCase {
 
         assertEquals(20,room.getSqr());
         assertEquals(Room.Type.Room, room.getType());
+
     }
 
 
