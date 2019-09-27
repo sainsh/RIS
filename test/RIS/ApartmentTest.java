@@ -34,6 +34,6 @@ public class ApartmentTest extends TestCase {
         Apartment apartment = new Apartment(70,4200);
 
         assertEquals(70,apartment.getSize());
-        assertEquals(4200, apartment.getMontlyRent());
+        assertEquals(4200, apartment.getMonthlyRent());
     }
 }

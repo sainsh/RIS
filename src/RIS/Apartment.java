@@ -5,19 +5,25 @@ import java.util.ArrayList;
 public class Apartment {
 
 
-    private final ArrayList<Room> rooms;
-    private int roomcount;
+    private ArrayList<Room> rooms;
+    private int monthlyRent;
+    private int roomCount;
     private int size;
 
     public Apartment(ArrayList<Room> rooms) {
         this.rooms = rooms;
         size = 0;
-        roomcount=0;
-        for (Room room : rooms){
+        roomCount = 0;
+        for (Room room : rooms) {
             size += room.getSqr();
-            roomcount++;
+            roomCount++;
         }
 
+    }
+
+    public Apartment(int size, int monthlyRent) {
+        this.size = size;
+        this.monthlyRent = monthlyRent;
     }
 
     public int getSize() {
@@ -25,6 +31,10 @@ public class Apartment {
     }
 
     public int getRoomCount() {
-        return roomcount;
+        return roomCount;
+    }
+
+    public int getMonthlyRent() {
+        return monthlyRent;
     }
 }
