@@ -1,15 +1,28 @@
 package RIS;
 
+import java.util.ArrayList;
+
 public class BuildingComplex {
-    public BuildingComplex(String address) {
+    private final String address;
+    private int size;
+    private ArrayList<Apartment> apartments;
+
+
+    public BuildingComplex(String address, ArrayList<Apartment> apartments) {
+        this.address = address;
+        this.apartments = apartments;
+        size = 0;
+        for (Apartment apartment : apartments){
+            size += apartment.getSize();
+        }
 
     }
 
     public String getAddress() {
-        return "Store Gade 19, 7400 Herning";
+        return address;
     }
 
     public int getSize() {
-        return 0;
+        return size;
     }
 }
