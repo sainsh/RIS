@@ -6,18 +6,18 @@ public class RoomTest extends TestCase {
 
     public void testCreateRoomWithFakeIt(){
 
-        Room room = new Room(Room.type.Kitchen, 14);
+        Room room = new Room(Room.Type.Kitchen, 14);
 
         assertEquals(14, room.getSqr());
-        assertEquals(Room.type.Kitchen, room.getType());
+        assertEquals(Room.Type.Kitchen, room.getType());
     }
 
     public void testCreateRoom(){
 
-        Room room = new Room(Room.type.Bathroom,9);
+        Room room = new Room(Room.Type.Bathroom,9);
 
         assertEquals(9, room.getSqr());
-        assertEquals(Room.type.Bathroom, room.getType());
+        assertEquals(Room.Type.Bathroom, room.getType());
     }
 
 

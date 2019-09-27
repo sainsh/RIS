@@ -5,20 +5,24 @@ package RIS;
 public class Room {
 
 
-    public Room(type type, int sqr) {
+    private final int sqr;
+    private final Type type;
 
+    public Room(Type type, int sqr) {
+        this.sqr = sqr;
+        this.type = type;
     }
 
     public int getSqr() {
-        return 14;
+        return sqr;
     }
 
-    public type getType() {
+    public Type getType() {
 
-        return type.Kitchen;
+        return type;
     }
 
-    public enum type {
+    public enum Type {
         Kitchen, Bathroom, Room
     }
 
